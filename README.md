@@ -10,9 +10,9 @@ Static HTML, CSS, JavaScript, and example-account screenshots. GitHub Pages publ
 
 ## Downloads
 
-Public downloads are temporarily unavailable during the transition to Premium. Free preview releases v0.4.0 and v0.5.0 are retained as private drafts. Previously downloaded copies cannot be remotely locked.
+The signed and notarized Mac Apple Silicon Premium direct download is publicly available in release v1.0.0-direct-arm64. INR 500 India activation is required inside the app. Intel Mac, Windows and Linux Premium packages are not available. Free preview releases v0.4.0 and v0.5.0 are retained as private drafts. Previously downloaded copies cannot be remotely locked.
 
-macOS 1.0.0 build 2 has been submitted to Apple for review at US$9.99. Direct-download Premium for India is ₹500, with activation separate from Store purchases. Production licensing and live payment/refund webhooks are configured securely. The Apple Silicon direct-download candidate passed signing and notarization. The owner deferred the real-payment test; successful paid activation, refund/retry and desktop restart/offline validation remain pending before public paid distribution. Do not publish test-license builds or expose signing secrets.
+macOS 1.0.0 build 2 has been submitted to Apple for review at US$9.99. Direct-download Premium for India is ₹500, with activation separate from Store purchases. Production licensing and live payment/refund webhooks are configured securely. The Apple Silicon direct-download candidate passed signing and notarization. The owner deferred the real-payment test; successful paid activation, refund/retry and desktop restart/offline validation remain pending; the owner authorized publishing with those checks outstanding. Do not publish test-license builds or expose signing secrets.
 
 WhatsApp Tools is an independent client and is not affiliated with WhatsApp or Meta. Broadcast Studio prepares messages for manual review and send; it does not send automatically or verify delivery.
 
