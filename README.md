@@ -10,7 +10,7 @@ Static HTML, CSS, JavaScript, and example-account screenshots. GitHub Pages publ
 
 ## Downloads
 
-The signed and notarized Mac Apple Silicon Premium direct download is publicly available in release v1.0.2-direct-arm64. INR 500 India activation is required inside the app. Windows x64 is also publicly available in release v1.0.2-windows-unsigned, explicitly unsigned and subject to SmartScreen/Unknown publisher warnings. Intel Mac and Linux Premium packages are not available. Free preview releases v0.4.0 and v0.5.0 are retained as private drafts. Previously downloaded copies cannot be remotely locked.
+The signed and notarized Mac Apple Silicon Premium direct download is publicly available in release v1.0.2-direct-arm64. INR 500 India activation is required inside the app. Windows x64 is also publicly available in release v1.0.3-windows-unsigned, explicitly unsigned and subject to SmartScreen/Unknown publisher warnings. Intel Mac and Linux Premium packages are not available. Free preview releases v0.4.0 and v0.5.0 are retained as private drafts. Previously downloaded copies cannot be remotely locked.
 
 macOS 1.0.0 build 2 has been submitted to Apple for review at US$9.99. Direct-download Premium for India is ₹500, with activation separate from Store purchases. Production licensing and live payment/refund webhooks are configured securely. The Apple Silicon direct-download candidate passed signing and notarization. The owner deferred the real-payment test; successful paid activation, refund/retry and desktop restart/offline validation remain pending; the owner authorized publishing with those checks outstanding. Do not publish test-license builds or expose signing secrets.
 
@@ -24,3 +24,5 @@ WhatsApp Tools is an independent client and is not affiliated with WhatsApp or M
 4. Push main and verify GitHub Pages and anonymous release downloads.
 
 A real purchase was confirmed by the owner to unlock Windows through Check purchase status. Version 1.0.2 adds automatic checks on return from checkout and bounded polling, plus clearer manual-key guidance. The live server accepts signed confirmation callbacks after webhook fulfillment. Refund and offline-renewal validation remain pending.
+
+Direct-download 1.0.3 allows notifications, camera and microphone only for WhatsApp Web in loaded, activated workspaces, with account-level opt-outs and OS approval still applicable. Existing workspaces adopt enabled defaults once. Calls and hardware capture are not yet verified end to end; screen sharing remains disabled.
