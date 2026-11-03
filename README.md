@@ -1,6 +1,6 @@
 # WhatsApp Tools — public website & downloads
 
-This repository contains the public product landing page and downloadable Windows releases. The desktop application's development repository remains private.
+This repository contains the public product landing page and future Premium downloads. The desktop application's development repository remains private.
 
 The generated Source code archives on this public repository contain this website, not the desktop app's development source. Desktop release packages contain the runtime files needed to run the app; an Electron application's bundled JavaScript can be inspected.
 
@@ -10,9 +10,9 @@ Static HTML, CSS, JavaScript, and example-account screenshots. GitHub Pages publ
 
 ## Downloads
 
-Use the Releases section for Windows ZIP packages and checksums. No app source ZIPs, account profiles, contacts, cookies, or campaign data are published here.
+Public downloads are temporarily unavailable during the transition to Premium. Free preview releases v0.4.0 and v0.5.0 are retained as private drafts. Previously downloaded copies cannot be remotely locked.
 
-To run: quit any older version, extract the entire Windows ZIP, and open Session.exe. Keep the accompanying files together. This is an unsigned Windows preview. macOS and Linux packages are not available yet.
+macOS 1.0.0 build 2 has been submitted to Apple for review at US$9.99. Direct-download Premium is planned at US$10, with activation separate from Store purchases. Razorpay merchant approval, production licensing and signed release validation are still required before direct sales. Do not publish test-license builds or expose signing secrets.
 
 WhatsApp Tools is an independent client and is not affiliated with WhatsApp or Meta. Broadcast Studio prepares messages for manual review and send; it does not send automatically or verify delivery.
 
