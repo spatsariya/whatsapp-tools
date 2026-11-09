@@ -1,0 +1,5 @@
+# Project-level copy; crawlers only use https://spatsariya.github.io/robots.txt
+User-agent: *
+Allow: /
+
+Sitemap: https://spatsariya.github.io/whatsapp-tools/sitemap.xml

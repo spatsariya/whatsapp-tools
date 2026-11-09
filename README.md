@@ -28,3 +28,11 @@ A real purchase was confirmed by the owner to unlock Windows through Check purch
 Direct-download 1.0.3 allows notifications, camera and microphone only for WhatsApp Web in loaded, activated workspaces, with account-level opt-outs and OS approval still applicable. Existing workspaces adopt enabled defaults once. Calls and hardware capture are not yet verified end to end; screen sharing remains disabled.
 
 Version 1.0.4 adds unread counts from WhatsApp page titles beside account names and requests an audible test notification. System focus/sound settings still apply; live incoming-message delivery has not been verified.
+
+## SEO maintenance
+
+All six HTML pages have absolute self-canonicals, social metadata and JSON-LD. Keep sitemap.xml in sync when adding or removing indexable pages. Feature guides must describe shipped capabilities; never advertise unattended sending. No invented reviews or rating markup is included. Update softwareVersion when publishing a new app release.
+
+Current release v1.0.13 includes a 30-day trial on Windows x64, Apple Silicon Mac and Linux x64. Direct-download Premium activation for India is ₹500. This supersedes the older download-availability notes above. The Mac App Store release remains pending.
+
+GitHub Pages publishes the repository root from main. Project robots.txt is informational: robots rules must live at https://spatsariya.github.io/robots.txt in the separate spatsariya.github.io repository. The domain root returned 404 during this change; no root blocking rules were present. Submit https://spatsariya.github.io/whatsapp-tools/sitemap.xml directly in a Search Console URL-prefix property for https://spatsariya.github.io/whatsapp-tools/. Verify ownership using Google's HTML verification file or meta tag, then inspect the homepage and three feature guides and request indexing. Track indexed pages, queries, impressions, clicks and download engagement; rankings are not guaranteed.
