@@ -5,3 +5,140 @@
 /* Readable text, keyboard access and flexible download links. */
 .hero-description,.section-intro p,.feature-rows p,.how-steps p,.download-copy>p,.download-copy .preview-note,.questions p,.download-note,.release-details,.developer-credit,.footer-top>div,.footer-bottom{color:#4e634d}.broadcast-copy .honest-note,.visual-footer>span,.visual-label{color:#b5cfb8}.release-links{flex-wrap:wrap;gap:16px}.release-details{flex-wrap:wrap}.release-links .button{max-width:100%;white-space:normal}.guide-links{padding-block:40px 64px}.guide-links h2{font-size:34px;letter-spacing:-1px}.guide-links nav{display:flex;flex-wrap:wrap;gap:16px 28px}.guide-links a{text-decoration:underline;text-underline-offset:4px}.site-footer .footer-top>div{flex-wrap:wrap}.view-tabs button{min-height:44px}
 @media(max-width:760px){.site-header nav{display:flex;position:static;box-shadow:none;flex-wrap:wrap;font-size:12px;padding:10px;gap:12px}.site-header{height:auto;min-height:76px;flex-wrap:wrap;padding-block:16px;gap:12px}.menu-toggle{display:none}.js .menu-toggle{display:flex}.js .site-header nav{display:none;position:absolute;top:68px}.js .site-header nav.open{display:flex}.release-details{line-height:1.8}}
+
+
+/* 2026 editorial refresh: monochrome, spacious, product-first.
+   Inspired by Subframe's restrained typography and UI presentation. */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&display=swap');
+:root{font-family:'DM Sans',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#181818;background:#fbfaf8;--muted:#6d6d6d;--green:#181818;--line:#e4e3df}
+body{color:#181818;background:#fbfaf8}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline-color:#5268e8}
+.site-header{height:84px;border-color:#e6e5e2}
+.brand{color:#191919;font-weight:700;letter-spacing:-1.1px}
+.brand-light{color:#777;font-weight:400}
+.brand-dot{color:#181818}
+.site-header nav{gap:33px;color:#4f4f4f}
+.site-header nav>a:hover,.footer-top>div>a:hover{color:#111}
+.nav-download{background:#191919;border:1px solid #191919;color:#fff;border-radius:6px;padding:11px 16px}
+.site-header nav>.nav-download:hover{background:#404040;color:white}
+.hero{grid-template-columns:minmax(0,1fr) 235px;column-gap:36px;padding-top:98px}
+.release-label{color:#686868;letter-spacing:1.35px;font-size:10px}
+.release-label>span{background:#353535}
+.release-label b{background:#eeece9;color:#333;border:1px solid #e4e1dc;padding:5px 9px}
+h1{font-size:clamp(54px,6.4vw,91px);font-weight:550;letter-spacing:-5.4px;line-height:1.03;margin:31px 0 27px}
+h1 em{font-style:normal;color:#888;font-family:inherit;letter-spacing:inherit;font-weight:450}
+em{font-style:normal;font-family:inherit;letter-spacing:inherit;font-weight:450;color:#898989}
+.hero-description{font-size:17px;line-height:1.75;color:#646464;max-width:610px}
+.hero-actions{margin-top:35px}
+.button{border-radius:7px;min-height:48px;font-weight:600;letter-spacing:-.1px}
+.button-dark{background:#181818;color:#fff;box-shadow:0 3px 8px #00000010}
+.button-dark:hover{background:#3b3b3b}
+.quiet-link{color:#353535;font-size:13px;font-weight:550}
+.download-note{color:#777;font-size:11px;margin-top:20px}
+.hero-note{border-left:1px solid #deddda;padding-left:26px}
+.hero-note p{color:#696969;line-height:1.8}
+.hero-note strong{color:#171717}
+.tiny-mark{color:#555}
+.handwritten{font-family:inherit;color:#999;font-size:12px}
+.product-stage{margin-top:78px;background:#f3f3f3;border:1px solid #dededc;border-radius:12px;box-shadow:0 30px 65px #20202012,0 2px 4px #00000008}
+.stage-top{height:47px;background:#f3f2f0;color:#737373;border-bottom:1px solid #deddda}
+.stage-dots i,.stage-dots i:first-child,.stage-dots i:nth-child(2){background:#c4c4c4}
+.stage-local i{background:#888}
+.screenshot-wrap{background:white}
+.stage-bottom{background:#f4f3f1;border-top:1px solid #deddda;min-height:72px}
+.view-tabs button{color:#888;font-weight:550}
+.view-tabs button.selected{color:#151515;border-bottom-color:#151515}
+.stage-caption{color:#898989}
+.principles{color:#747474;border-color:#e3e2de;padding-block:38px}
+.principles span:before{content:'+';color:#686868;font-weight:700;font-size:16px}
+.workspace-section{padding-block:135px 145px;gap:105px}
+.eyebrow{color:#777;font-size:10px;letter-spacing:1.65px}
+h2{font-weight:550;font-size:clamp(40px,4.5vw,62px);letter-spacing:-2.8px;line-height:1.09}
+.section-intro>p{color:#777;font-size:15px}
+.feature-rows article{border-color:#e5e4e0;padding-block:30px}
+.feature-rows h3{color:#222;font-size:20px;font-weight:550}
+.feature-rows p{color:#737373;font-size:14px;line-height:1.8}
+.feature-number{color:#999}
+.feature-symbol{color:#8b8b8b}
+.broadcast-section{background:#202020;color:#f5f5f5;padding-block:112px}
+.broadcast-inner{gap:82px}
+.broadcast-copy .eyebrow{color:#aaa}
+.broadcast-copy h2{color:#f5f5f5;font-weight:500}
+.broadcast-copy h2 em{color:#aaa}
+.broadcast-copy>p{color:#b9b9b9;font-size:14px}
+.broadcast-copy li{color:#d0d0d0}
+.broadcast-copy li:before{color:#aaa}
+.text-link-light{border-bottom-color:#747474;color:#f5f5f5}
+.text-link-light:hover{color:#fff}
+.broadcast-copy .honest-note{color:#aaa}
+.broadcast-visual{border:1px solid #474747;background:#272727;box-shadow:0 20px 50px #0004}
+.visual-label{color:#bbb}
+.visual-label i{background:#ccc}
+.broadcast-visual>img{border-color:#444}
+.visual-footer code{color:#fff}
+.visual-footer>span{color:#aaa}
+.how-section{padding-block:132px}
+.how-steps article{border-color:#e4e3df}
+.how-steps article>span{border-color:#dcdad6;color:#626262;background:#fff}
+.how-steps h3{color:#222;font-size:19px}
+.how-steps p{color:#757575;font-size:14px}
+.how-steps strong{color:#333}
+.download-section{background:#efeeeb;border:1px solid #e2e0dc;border-radius:14px;padding:72px;grid-template-columns:minmax(0,1.45fr) minmax(260px,.7fr)}
+.download-copy h2{font-size:clamp(40px,4.3vw,60px)}
+.download-copy>p{color:#6c6c6c;font-size:14px;max-width:700px}
+.release-details{color:#757575}
+.release-details>span+span:before{color:#aaa}
+.release-links{gap:10px;margin-top:24px}
+.release-links .button{background:#fff;color:#222;border:1px solid #d9d8d4;box-shadow:none;text-decoration:none;padding:12px 15px;font-size:11px;min-height:42px}
+.release-links .button:hover{background:#e3e2df;color:#171717}
+.release-links>a:not(.button){align-self:center;color:#505050;margin:4px 7px}
+.download-copy .preview-note{color:#777;max-width:690px}
+.art-orbit{border-color:#d6d4cf}
+.app-tile{filter:grayscale(1) drop-shadow(0 20px 22px #0002)}
+.art-tag{border:1px solid #d6d4d0;background:#fafaf9;color:#5b5b5b;box-shadow:0 7px 15px #00000008}
+.tag-three{background:#e4e2df}
+.faq-section{padding-block:140px}
+.questions details{border-color:#e2e1dd}
+.questions summary{font-size:15px}
+.questions summary>span{color:#777}
+.questions p{color:#6d6d6d;font-size:13px}
+.guide-links{border-top:1px solid #e5e4e0}
+.guide-links h2{color:#252525}
+.guide-links p,.guide-links nav{color:#666}
+.site-footer{border-color:#e4e3df}
+.footer-top>span{font-family:inherit;font-style:normal;color:#777}
+.footer-top>div{color:#666}
+.footer-bottom,.developer-credit{color:#777}
+.developer-credit a{text-decoration-color:#bdbdbd}
+.developer-credit a:hover{color:#111}
+.hero-description,.section-intro p,.feature-rows p,.how-steps p,.download-copy>p,.download-copy .preview-note,.questions p,.download-note,.release-details,.developer-credit,.footer-top>div,.footer-bottom{color:#686868}
+.broadcast-copy .honest-note,.visual-footer>span,.visual-label{color:#bcbcbc}
+@media(max-width:1100px){
+.hero{grid-template-columns:minmax(0,1fr) 200px}
+h1{letter-spacing:-3.8px}
+.workspace-section{gap:55px}
+.broadcast-inner{gap:38px}
+.download-section{padding:48px;grid-template-columns:minmax(0,1fr) 240px}
+.download-art{transform:scale(.72);transform-origin:left center}
+}
+@media(max-width:760px){
+.site-header{height:auto;min-height:74px}
+.menu-toggle{background:#f5f4f2;border-color:#deddda;color:#222}
+.site-header nav,.js .site-header nav{background:#fbfaf8;border-color:#e5e3df}
+.nav-download{background:#181818;border-color:#181818;color:#fff}
+.hero{display:block;padding-top:62px}
+h1{font-size:clamp(46px,10vw,72px);letter-spacing:-3px}
+.hero-description{font-size:15px}
+.product-stage{margin-top:48px}
+.stage-top{height:36px}
+.stage-bottom{min-height:56px}
+.principles{gap:16px}
+.workspace-section,.how-section,.faq-section{padding-block:80px}
+h2{letter-spacing:-1.8px}
+.broadcast-section{padding-block:76px}
+.download-section{padding:36px 24px}
+.release-links{gap:10px}
+.release-links .button{width:100%;justify-content:center}
+.release-links>a:not(.button){margin:5px 0}
+}
+@media(prefers-reduced-motion:reduce){.button,.button:hover{transition:none;transform:none}}
