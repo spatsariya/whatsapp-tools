@@ -142,3 +142,6 @@ h2{letter-spacing:-1.8px}
 .release-links>a:not(.button){margin:5px 0}
 }
 @media(prefers-reduced-motion:reduce){.button,.button:hover{transition:none;transform:none}}
+
+/* Keep original logo asset unchanged while presenting it neutrally on this site. */
+.brand img{filter:grayscale(1)}
