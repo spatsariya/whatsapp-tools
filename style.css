@@ -48,3 +48,63 @@
 .spotlight-inner{grid-template-columns:minmax(0,1fr);gap:32px}
 .spotlight-screen{width:100%}
 }
+
+
+/* Typography scale refresh: readable at standard 100% browser zoom. */
+html{font-size:16px;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{font-size:16px;line-height:1.55}
+.site-header nav{font-size:15px}
+.nav-cta,.menu-toggle{font-size:14px}
+.announcement{font-size:13px}
+.hero-lead{font-size:19px;line-height:1.7}
+.button{font-size:15px;min-height:50px}
+.hero-reassurance{font-size:14px}
+.preview-toolbar{font-size:13px}
+.preview-version{font-size:11px}
+.preview-navigation button{font-size:14px}
+.preview-navigation button span,.example-disclaimer{font-size:12px}
+.trust-content{font-size:14px}
+.trust-content span:first-child{font-size:12px}
+.section-kicker,.eyebrow{font-size:12px}
+.section-heading p{font-size:17px;line-height:1.75}
+.feature-index{font-size:12px}
+.feature-card p{font-size:16px;line-height:1.75}
+.spotlight-copy>p{font-size:17px}
+.spotlight-list{font-size:15px}
+.light-link{font-size:15px}
+.spotlight-copy .spotlight-note{font-size:13px}
+.spotlight-top{font-size:11px}
+.step-number{font-size:13px}
+.steps-grid p{font-size:16px;line-height:1.75}
+.platform-card p{font-size:15px}
+.platform-card .button{font-size:14px}
+.platform-secondary{font-size:14px}
+.download-footnote{font-size:14px;line-height:1.7}
+.download-footnote p{max-width:800px}
+.questions summary{font-size:17px}
+.questions p{font-size:15px;line-height:1.8}
+.guide-links p{font-size:15px}
+.guide-links a{font-size:14px}
+.footer-top>span,.footer-top>div{font-size:14px}
+.footer-bottom,.developer-credit{font-size:13px}
+@media(max-width:760px){
+ .site-header nav{font-size:15px}
+ .announcement{font-size:11px}
+ .hero-lead{font-size:16px}
+ .hero-reassurance{font-size:12px}
+ .preview-toolbar{font-size:11px}
+ .preview-navigation button{font-size:12px}
+ .trust-content{font-size:12px}
+ .trust-content span:first-child{font-size:11px}
+ .section-heading p{font-size:15px}
+ .feature-card p{font-size:15px}
+ .spotlight-copy>p{font-size:16px}
+ .spotlight-list{font-size:14px}
+ .steps-grid p{font-size:15px}
+ .platform-card p{font-size:14px}
+ .platform-card .button{font-size:14px}
+ .download-footnote{font-size:13px}
+ .questions summary{font-size:15px}
+ .questions p{font-size:14px}
+ .footer-bottom,.developer-credit{font-size:12px}
+}
