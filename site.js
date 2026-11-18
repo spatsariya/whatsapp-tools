@@ -7,7 +7,7 @@ document.querySelectorAll('[data-view]').forEach(button=>button.addEventListener
 
 /**
  * Only promote a release once every advertised platform has a real public
- * asset. Existing static 1.0.13 links remain usable during network failures
+ * asset. Existing static 1.0.14 links remain usable during network failures
  * or while a new build is still being published.
  */
 async function loadLatestPublicRelease(){
@@ -34,7 +34,7 @@ async function loadLatestPublicRelease(){
       resolved[id]=url;
     }
     // Do not replace a newer, cached HTML link with an older API response.
-    const current='1.0.13'.split('.').map(Number);
+    const current='1.0.14'.split('.').map(Number);
     const next=version.split('.').map(Number);
     for(let i=0;i<3;i++){
       if(next[i]<current[i])return;
