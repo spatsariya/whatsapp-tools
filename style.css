@@ -108,3 +108,7 @@ body{font-size:16px;line-height:1.55}
  .questions p{font-size:14px}
  .footer-bottom,.developer-credit{font-size:12px}
 }
+
+/* A small release note that appears only after all advertised packages exist. */
+.release-highlights{max-width:860px;margin:0 auto 26px;padding:12px 18px;border:1px solid #dededb;border-radius:12px;background:#f9f9f7;color:#383d41;font-size:15px;line-height:1.6;text-align:center}
+.release-highlights[hidden]{display:none}
