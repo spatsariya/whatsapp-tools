@@ -1,38 +1,40 @@
-# WhatsApp Tools — public website & downloads
+# WhatsApp Tools
 
-This repository contains the public product landing page and future Premium downloads. The desktop application's development repository remains private.
+Public landing page and official direct-download release assets for WhatsApp Tools Desktop.
 
-The generated Source code archives on this public repository contain this website, not the desktop app's development source. Desktop release packages contain the runtime files needed to run the app; an Electron application's bundled JavaScript can be inspected.
+**Website:** https://spatsariya.github.io/whatsapp-tools/  
+**Downloads and release notes:** https://github.com/spatsariya/whatsapp-tools/releases/latest
 
-## Website
+## Public downloads
 
-Static HTML, CSS, JavaScript, and example-account screenshots. GitHub Pages publishes the repository root from main.
+The last verified public release at the time of this update is **v1.0.13**. Installers are available for:
 
-## Downloads
+- Windows x64: unsigned `.exe` installer (Windows may show SmartScreen).
+- macOS Apple Silicon: signed/notarized direct-download `.dmg`.
+- Linux x64: `.AppImage` and `.deb` packages.
 
-The signed and notarized Mac Apple Silicon Premium direct download is publicly available in release v1.0.4-direct-arm64. INR 500 India activation is required inside the app. Windows x64 is also publicly available in release v1.0.4-windows-unsigned, explicitly unsigned and subject to SmartScreen/Unknown publisher warnings. Intel Mac and Linux Premium packages are not available. Free preview releases v0.4.0 and v0.5.0 are retained as private drafts. Previously downloaded copies cannot be remotely locked.
+Download binaries only from a published release. Each release includes SHA-256 checksums. The Mac App Store release is separate and remains pending.
 
-Mac App Store 1.0.4 build 3 is uploaded; the Store release is pending at US$9.99. Direct-download Premium for India is ₹500, with activation separate from Store purchases. Production licensing and live payment/refund webhooks are configured securely. The Apple Silicon direct-download candidate passed signing and notarization. The owner deferred the real-payment test; successful paid activation, refund/retry and desktop restart/offline validation remain pending; the owner authorized publishing with those checks outstanding. Do not publish test-license builds or expose signing secrets.
+## New desktop release
 
-WhatsApp Tools is an independent client and is not affiliated with WhatsApp or Meta. Broadcast Studio prepares messages for manual review and send; it does not send automatically or verify delivery.
+The desktop application's private repository has a right-click editing fix for message and search inputs, included in the **v1.0.14** build process. The release is available to download **only after its installers have been built, checked and published**. Until then, v1.0.13 remains the latest public download.
 
-## Updating a release
+The website checks the public GitHub Releases API on load. It updates its displayed version, release notes and operating-system download links only when all four expected public packages have been uploaded. If GitHub is unavailable, the static v1.0.13 links remain in place.
 
-1. Add the new Windows package and SHA256SUMS.txt to a release in this public repository. Do not attach the private app source ZIP.
-2. Update download URLs, version, file size, and release-note links in index.html.
-3. Update screenshots only with example accounts and fictitious contact data.
-4. Push main and verify GitHub Pages and anonymous release downloads.
+## Publishing
 
-A real purchase was confirmed by the owner to unlock Windows through Check purchase status. Version 1.0.2 adds automatic checks on return from checkout and bounded polling, plus clearer manual-key guidance. The live server accepts signed confirmation callbacks after webhook fulfillment. Refund and offline-renewal validation remain pending.
+GitHub Pages publishes the root of `main`, with HTTPS.
 
-Direct-download 1.0.3 allows notifications, camera and microphone only for WhatsApp Web in loaded, activated workspaces, with account-level opt-outs and OS approval still applicable. Existing workspaces adopt enabled defaults once. Calls and hardware capture are not yet verified end to end; screen sharing remains disabled.
+The desktop development repository (`spatsariya/whatsapp-tools-desktop`) is private. Its build workflow runs tests and packages Windows, Linux and Apple Silicon versions, including production licensing configuration and Mac notarization checks. A release mirror requires a suitable `PUBLIC_RELEASE_TOKEN` secret with permission to create releases in this public repository. Only approved installers and checksums may be mirrored, **not** the private development source archive.
 
-Version 1.0.4 adds unread counts from WhatsApp page titles beside account names and requests an audible test notification. System focus/sound settings still apply; live incoming-message delivery has not been verified.
+For further releases, verify that the public release is non-draft and contains all expected downloadable packages. Verify public anonymous download access before promoting release claims.
 
-## SEO maintenance
+## Product
 
-All six HTML pages have absolute self-canonicals, social metadata and JSON-LD. Keep sitemap.xml in sync when adding or removing indexable pages. Feature guides must describe shipped capabilities; never advertise unattended sending. No invented reviews or rating markup is included. Update softwareVersion when publishing a new app release.
+WhatsApp Tools is an independent desktop client for multiple WhatsApp Web account workspaces. Broadcast Studio prepares messages for manual review and sending. It does not send messages automatically. The product is not affiliated with WhatsApp or Meta.
 
-Current release v1.0.13 includes a 30-day trial on Windows x64, Apple Silicon Mac and Linux x64. Direct-download Premium activation for India is ₹500. This supersedes the older download-availability notes above. The Mac App Store release remains pending.
+Direct-download Premium activation in India is ₹500 after the 30-day trial. The Windows app is unsigned; macOS direct builds require signing and notarization. Licensing and purchase support: https://spatsariya.github.io/whatsapp-tools/support.html
 
-GitHub Pages publishes the repository root from main. Project robots.txt is informational: robots rules must live at https://spatsariya.github.io/robots.txt in the separate spatsariya.github.io repository. The domain root returned 404 during this change; no root blocking rules were present. Submit https://spatsariya.github.io/whatsapp-tools/sitemap.xml directly in a Search Console URL-prefix property for https://spatsariya.github.io/whatsapp-tools/. Verify ownership using Google's HTML verification file or meta tag, then inspect the homepage and three feature guides and request indexing. Track indexed pages, queries, impressions, clicks and download engagement; rankings are not guaranteed.
+## SEO
+
+The repository includes SEO metadata, structured data, a sitemap, and guides. Keep static fallback version metadata accurate; the landing page also updates structured release version data at runtime when verified assets are available.
