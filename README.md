@@ -7,7 +7,7 @@ Public landing page and official direct-download release assets for WhatsApp Too
 
 ## Public downloads
 
-The last verified public release at the time of this update is **v1.0.13**. Installers are available for:
+The latest verified public release at the time of this update is **v1.0.14**. Installers are available for:
 
 - Windows x64: unsigned `.exe` installer (Windows may show SmartScreen).
 - macOS Apple Silicon: signed/notarized direct-download `.dmg`.
@@ -17,9 +17,9 @@ Download binaries only from a published release. Each release includes SHA-256 c
 
 ## New desktop release
 
-The desktop application's private repository has a right-click editing fix for message and search inputs, included in the **v1.0.14** build process. The release is available to download **only after its installers have been built, checked and published**. Until then, v1.0.13 remains the latest public download.
+**v1.0.14 is published:** the desktop application now includes a right-click editing menu for editable message fields, searches, and other text areas. Windows x64, macOS Apple Silicon, and Linux x64 packages are available in the [public v1.0.14 release](https://github.com/spatsariya/whatsapp-tools/releases/tag/v1.0.14), along with SHA-256 checksum files. The private source repository remains private.
 
-The website checks the public GitHub Releases API on load. It updates its displayed version, release notes and operating-system download links only when all four expected public packages have been uploaded. If GitHub is unavailable, the static v1.0.13 links remain in place.
+The website checks the public GitHub Releases API on load. It updates its displayed version, release notes and operating-system download links only when all four expected public packages have been uploaded. If GitHub is unavailable, the static v1.0.14 links remain in place.
 
 ## Publishing
 
