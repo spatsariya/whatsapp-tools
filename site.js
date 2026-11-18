@@ -36,7 +36,10 @@ async function loadLatestPublicRelease(){
     // Do not replace a newer, cached HTML link with an older API response.
     const current='1.0.13'.split('.').map(Number);
     const next=version.split('.').map(Number);
-    if(next.find((v,i)=>v!==current[i])<current[next.findIndex((v,i)=>v!==current[i])])return;
+    for(let i=0;i<3;i++){
+      if(next[i]<current[i])return;
+      if(next[i]>current[i])break;
+    }
     for(const [id,url] of Object.entries(resolved)){
       const link=document.getElementById(id);
       if(link)link.href=url;
